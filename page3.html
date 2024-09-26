@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:200px;
+            height: 200px;
+            background-color: black;
+            animation: myani 3s linear 0s 3;
+        }
+        div:hover{animation-play-state: paused;}
+
+        @keyframes myani {
+            0%{
+                background-color: black;
+            }
+            20%{
+                width: 600px;
+                background-color:chocolate;
+            }
+            50%{
+                width:100px;
+                background-color: brown;
+            }
+            75%{
+                background-color:chartreuse;
+            }
+            100%{
+                background-color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
